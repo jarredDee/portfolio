@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2cf684ff11.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Jarred Dee</span><br />
+            from Cerritos, California
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--------------------about---------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Dedicated and innovative Game Designer with a proven track record
+              of leading successful game development projects. Offering
+              expertise in Unity Game Engine, C#, and full-stack application
+              development, complemented by a strong foundation in
+              object-oriented programming. Eager to leverage this skill set to
+              collaborate to create cutting-edge and captivating video games
+              that uphold the integrity and standards of the gaming industry.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Lead Game Design/Development</span><br />Designing
+                    Web/App interfaces
+                  </li>
+                  <li><span>Web Development</span><br />Web app Development</li>
+                  <li>
+                    <span>App Developement</span><br />Building Adroid/iOS apps
+                  </li>
+                  <li>
+                    <span>Technical Support</span><br />Software/Hardware
+                    Troubleshooting
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>November 2022 - Present</span><br />Asset Management
+                    Solutions, Inc.
+                  </li>
+                  <li>
+                    <span>April 2022 - October 2022</span><br />HF Foods Group
+                  </li>
+                  <li><span>April 2018 - August 2020</span><br />Somi Somi</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2017 - 2021</span><br />California State University,
+                    Long Beach
+                  </li>
+                  <li><span>2013 - 2017</span><br />Cerritos High School</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Game Design/Development</h2>
+            <!-- <p>This is the description for web design</p>
+            <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>Mobile/Web Development</h2>
+            <!-- <p>This is the description for UI/UX design</p>
+            <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Software/Hardware Troubleshooting</h2>
+            <!-- <p>This is the description for App design</p>
+            <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------portfolio------------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/card.png" />
+            <div class="layer">
+              <h3>Tatum Bot</h3>
+              <p>
+                NBA Discord Trading Card bot where you can collect, upgrade, and
+                battle with your favorite NBA players.
+              </p>
+              <a
+                href="https://docs.google.com/document/d/1zJ5eEBF5VeqeTiVSaGQKRddXQ9YEe7PaCFW6fXt5Uj4/edit?usp=sharing"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/moovy.jpg" />
+            <div class="layer">
+              <h3>Moovy App</h3>
+              <p>
+                Movie streaming/database cross-platform mobile application.
+                Developed with Flutter SDK, GCP, and TMD API
+              </p>
+              <a href="https://github.com/rmpsc/Moovy"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/rpg.png" />
+            <div class="layer">
+              <h3>Swipe Swiper</h3>
+              <p>
+                Hack and Slash game made using Unity where you can move around
+                and slash slimes.
+              </p>
+              <a href="https://github.com/jarredDee/pixel-rpg/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!---------------------------contact---------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> jarredd1607@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 562-282-2722</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/jarreddee/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/jarredDee"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/my-resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Thanks for visiting my page!
+          <i class="fa-solid fa-heart">
+            <i class="fa-solid fa-face-laugh-squint"></i
+          ></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzwBJrTx8ivDiWozADDRnHup8wJ5GOuO2JeuXN7VV4eyAJZjE_UVptNL6RUTkY8Yq-s/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
